@@ -9,7 +9,7 @@ dependencies {
     implementation "com.netflix.conductor:conductor-core:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-persistence:${revConductor}"
     implementation "com.netflix.conductor:conductor-cassandra-persistence:${revConductor}"
-    implementation "com.netflix.conductor:conductor-es6-persistence:${revConductor}"
+    implementation "com.netflix.conductor:conductor-es7-persistence:${revConductor}"
     implementation "com.netflix.conductor:conductor-grpc-server:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-lock:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-concurrency-limit:${revConductor}"
@@ -45,6 +45,8 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     implementation 'org.apache.logging.log4j:log4j-web'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.0.8'
+
 
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
